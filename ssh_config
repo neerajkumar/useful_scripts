@@ -1,0 +1,3 @@
+Host hostsrv
+     HostName 192.241.165.181
+     User root
