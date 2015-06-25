@@ -1,3 +1,46 @@
-Host hostsrv
+Host hostsrv_old
      HostName 192.241.165.181
      User root
+
+Host hostsrv
+     HostName 104.131.110.105
+     User root
+
+Host gdcvib
+     HostName 46.137.242.107
+     IdentityFile ~/.ssh/asia.pem
+     User bitnami
+
+Host italyabroad
+     HostName 89.145.121.178
+     User italy
+
+Host figsstg01
+     HostName eu.stg.app01.outbidhq.com
+     IdentityFile ~/.ssh/eu-figs-staging.pem
+     User figs
+
+Host figsstg02
+     HostName eu.stg.app02.outbidhq.com
+     IdentityFile ~/.ssh/eu-figs-staging.pem
+     User figs
+
+Host figsint01
+     HostName us.int.app01.outbidhq.com
+     IdentityFile ~/.ssh/us-figs-integration.pem
+     User figs
+
+Host figsint02
+     HostName us.int.app02.outbidhq.com
+     IdentityFile ~/.ssh/us-figs-integration.pem
+     User figs
+
+Host figsqa01
+     HostName us.qa.app01.outbidhq.com
+     IdentityFile ~/.ssh/us-figs-qa.pem
+     User figs
+
+Host figsqa02
+     HostName us.qa.app02.outbidhq.com
+     IdentityFile ~/.ssh/us-figs-qa.pem
+     User figs
