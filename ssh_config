@@ -15,32 +15,26 @@ Host italyabroad
      HostName 89.145.121.178
      User italy
 
-Host figsstg01
-     HostName eu.stg.app01.outbidhq.com
-     IdentityFile ~/.ssh/eu-figs-staging.pem
-     User figs
+Host dev2-01
+     HostName rndgfg201.copart.com
+     User nxkumar
 
-Host figsstg02
-     HostName eu.stg.app02.outbidhq.com
-     IdentityFile ~/.ssh/eu-figs-staging.pem
-     User figs
+Host dev2-02
+     HostName rndgfg202.copart.com
+     User nxkumar
 
-Host figsint01
-     HostName us.int.app01.outbidhq.com
-     IdentityFile ~/.ssh/us-figs-integration.pem
-     User figs
+Host dev2-mw
+     HostName rndgmw201.copart.com
+     User nxkumar
 
-Host figsint02
-     HostName us.int.app02.outbidhq.com
-     IdentityFile ~/.ssh/us-figs-integration.pem
-     User figs
+Host qa2-01
+     HostName rnqgfg201.copart.com
+     User nxkumar
 
-Host figsqa01
-     HostName us.qa.app01.outbidhq.com
-     IdentityFile ~/.ssh/us-figs-qa.pem
-     User figs
+Host qa2-02
+     HostName rnqgfg202.copart.com
+     User nxkumar
 
-Host figsqa02
-     HostName us.qa.app02.outbidhq.com
-     IdentityFile ~/.ssh/us-figs-qa.pem
-     User figs
+Host qa2-mw
+     HostName rnqgmw201.copart.com
+     User nxkumar
