@@ -6,35 +6,35 @@ Host hostsrv
      HostName 104.131.110.105
      User root
 
-Host gdcvib
-     HostName 46.137.242.107
-     IdentityFile ~/.ssh/asia.pem
-     User bitnami
+Host ssh-jmp.stg-us-west-2.enjoytechnology.com
+  User neeraj
+  Port 1022
 
-Host italyabroad
-     HostName 89.145.121.178
-     User italy
+Host ssh-jmp.stg-eu-west-1.enjoytechnology.com
+  User neeraj
+  Port 1022
 
-Host dev2-01
-     HostName rndgfg201.copart.com
-     User nxkumar
+Host *.stg.enjoytechnology.com *.stg-us-west-2.enjoytechnology.com !ssh-jmp.stg-us-west-2.enjoytechnology.com
+  User neeraj
+  ProxyCommand ssh -W %h:%p ssh-jmp.stg-us-west-2.enjoytechnology.com
+  IdentityFile ~/.ssh/id_rsa
 
-Host dev2-02
-     HostName rndgfg202.copart.com
-     User nxkumar
+Host *.stg-eu-west-1.enjoytechnology.com !ssh-jmp.stg-eu-west-1.enjoytechnology.com
+  User neeraj
+  ProxyCommand ssh -W %h:%p ssh-jmp.stg-eu-west-1.enjoytechnology.com
 
-Host dev2-mw
-     HostName rndgmw201.copart.com
-     User nxkumar
+Host ssh-jmp.prd-us-west-2.enjoytechnology.com
+  User neeraj
+  Port 1022
 
-Host qa2-01
-     HostName rnqgfg201.copart.com
-     User nxkumar
+Host *.prd-us-west-2.enjoytechnology.com wst* !ssh-jmp.prd-us-west-2.enjoytechnology.com
+  User neeraj
+  ProxyCommand ssh -W %h:%p ssh-jmp.prd-us-west-2.enjoytechnology.com
 
-Host qa2-02
-     HostName rnqgfg202.copart.com
-     User nxkumar
+Host ssh-jmp.prd-eu-west-1.enjoytechnology.com
+  User neeraj
+  Port 1022
 
-Host qa2-mw
-     HostName rnqgmw201.copart.com
-     User nxkumar
+Host *.prd-eu-west-1.enjoytechnology.com ire* !ssh-jmp.prd-eu-west-1.enjoytechnology.com
+  User neeraj
+  ProxyCommand ssh -W %h:%p ssh-jmp.prd-eu-west-1.enjoytechnology.com
